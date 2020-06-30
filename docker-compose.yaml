@@ -1,0 +1,11 @@
+  version: "1"
+
+  services:
+      web-service:
+        build: WebService/
+        restart: always
+        ports:
+          - 8080:8080
+        environment:
+          - TZ=Europe/Moscow
+          - LOG_MODE=dev
